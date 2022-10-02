@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,c,b as o}from"./app.c4e9f175.js";const l={},s=o("p",null,"https://developer.aliyun.com/article/925985?spm=a2c6h.12873639.article-detail.63.29464e8dl9UHYA#slide-6",-1),_=[s];function r(a,n){return t(),c("div",null,_)}const m=e(l,[["render",r],["__file","INTERFACE_OPT.html.vue"]]);export{m as default};
