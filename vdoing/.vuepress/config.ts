@@ -1,21 +1,24 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+    //github
+    base: "/vdoing/",
+    dest: "./docs",
+    //gitee
+    // base: "/",
+    // dest: "./dist",
 
-  // dest: "./dist",
-  dest: "./docs",
 
-  locales: {
-    "/": {
-      lang: "zh-CN",
-      title: "Magic.*",
-      description: "vuepress-theme-hope 的文档演示",
+    locales: {
+        "/": {
+            lang: "zh-CN",
+            title: "Magic.*",
+            description: "vuepress-theme-hope 的文档演示",
+        },
     },
-  },
 
-  theme,
+    theme,
 
-  shouldPrefetch: false,
+    shouldPrefetch: false,
 });
