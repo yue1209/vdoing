@@ -1,0 +1,20 @@
+{
+  "name": "vdoing",
+  "version": "2.0.0",
+  "description": "A project of vuepress-theme-hope",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "vuepress build vdoing",
+    "clean-dev": "vuepress dev vdoing --clean-cache",
+    "dev": "vuepress dev vdoing"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/plugin-search": "^2.0.0-beta.51",
+    "vue": "^3.2.29",
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
+    "vuepress-theme-hope": "2.0.0-beta.104"
+  }
+}
