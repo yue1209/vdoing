@@ -1,7 +1,6 @@
 ---
 title: Duboo
-date: 2021-10-16 01:25:48
-permalink: /pages/76ebc4/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - 框架

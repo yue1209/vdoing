@@ -1,7 +1,6 @@
 ---
 title: RocketMQ
-date: 2021-10-20 09:32:18
-permalink: /pages/bd51fb/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - MQ

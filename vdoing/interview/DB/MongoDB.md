@@ -1,7 +1,6 @@
 ---
 title: Mongo
-date: 2021-10-15 13:42:48
-permalink: /pages/9d9886/
+date: 2022-10-02 18:50:29
 categories:
   - interview
 tags:

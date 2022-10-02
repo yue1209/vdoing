@@ -1,7 +1,6 @@
 ---
 title: RabbitMQ
-date: 2021-10-15 13:42:48
-permalink: /pages/27181a/
+date: 2022-10-02 18:50:29
 categories:
   - interview
 tags:

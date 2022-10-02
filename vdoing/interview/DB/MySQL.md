@@ -1,7 +1,6 @@
 ---
 title: Mysql
-date: 2021-10-15 13:42:48
-permalink: /pages/a7475c/
+date: 2022-10-02 18:50:29
 categories:
   - interview
 tags:
@@ -337,10 +336,10 @@ MySQL内建的复制功能是构建大型，高性能应用程序的基础。将
    ```sql
    -- 1) 查询出2011年以后入职的员工信息
    -- 2) 查询所有的部门信息，与上面的虚拟表中的信息比对，找出所有部门ID相等的员工。
-   select * from dept d,  (select * from employee where join_date > '2011-1-1') e where e.dept_id =  d.id;    
+date: 2022-10-02 18:50:29
    
    -- 使用表连接：
-   select d.*, e.* from  dept d inner join employee e on d.id = e.dept_id where e.join_date >  '2011-1-1'
+date: 2022-10-02 18:50:29
    123456
    ```
 
@@ -420,12 +419,12 @@ SELECT  FROM <tablename> WHERE  LIKE "%b";
   - substring（str，index，length）返回 str 字符串从 index 位开始长度为length 个字符（index 从 1 开始）
   - reverse（str）将 str 字符串倒序输出
 - **日期函数**
-  - curdate（）、current_date( ) 获取当前日期
+date: 2022-10-02 18:50:29
   - curtime（）、current_time( ) 获取当前日期
   - now（）获取当前日期和时间
-  - datediff（d1、d2）d1 和 d2 之间的天数差
-  - adddate（date，num）返回 date 日期开始，之后 num 天的日期
-  - subdate（date，num）返回 date 日期开始，之前 num 天的日期
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
 - **聚合函数**
   - count（字段）根据某个字段统计总记录数（当前数据库保存到多少条数据）
   - sum（字段）计算某个字段的数值总和
@@ -447,8 +446,8 @@ SELECT  FROM <tablename> WHERE  LIKE "%b";
 |                      | decimal(m,d) | 压缩严格的定点数                                             |
 | **日期类型**         | year         | YYYY 1901~2155                                               |
 |                      | time         | HH:MM:SS -838:59:59~838:59:59                                |
-|                      | date         | YYYY-MM-DD 1000-01-01~9999-12-3                              |
-|                      | datetime     | YYYY-MM-DD HH:MM:SS 1000-01-01 00:00:00~ 9999-12-31 23:59:59 |
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
 |                      | timestamp    | YYYY-MM-DD HH:MM:SS 19700101 00:00:01 UTC~2038-01-19 03:14:07UTC |
 | **文本、二进制类型** | CHAR(M)      | M为0~255之间的整数                                           |
 |                      | VARCHAR(M)   | M为0~65535之间的整数                                         |
@@ -494,7 +493,7 @@ SELECT  FROM <tablename> WHERE  LIKE "%b";
   尽量避免使用数字作为ENUM枚举的常量，因为容易混乱。
   排序是按照内部存储的整数
 
-- `日期和时间类型`，尽量使用timestamp，空间效率高于datetime，
+date: 2022-10-02 18:50:29
   用整数保存时间戳通常不方便处理。
   如果需要存储微妙，可以使用bigint存储。
   看到这里，这道真题是不是就比较容易回答了。
@@ -615,7 +614,7 @@ BLOB 和 TEXT 类型之间的唯一区别在于对 BLOB 值进行排序和比较
   - InnoDB
     提供事务支持事务，外部键等高级数据库功能。 具有事务(commit)、回滚(rollback)和崩溃修复能力(crash recovery capabilities)的事务安全 (transaction-safe (ACID compliant))型表。
 - **InnoDB 支持行级锁，而 MyISAM 支持表级锁**
-  用户在操作 myisam 表时，select，update，delete，insert 语句都会给表自动加锁，如果加锁以后的表满足 insert 并发的情况下，可以在表的尾部插入新的数据。
+date: 2022-10-02 18:50:29
 - **InnoDB 支持 MVCC, 而 MyISAM 不支持**
 - **InnoDB 支持外键，而 MyISAM 不支持**
 - **表主键**
@@ -1155,11 +1154,11 @@ InnoDB 这种行锁实现特点意味着：只有通过索引条件检索数据�
 例如:
 
 ```sql
-select * from tab_with_index where id = 1 for update;
+date: 2022-10-02 18:50:29
 1
 ```
 
-for update 可以根据条件来完成行锁锁定，并且 id 是有索引键的列，如果 id 不是索引键那么InnoDB将完成表锁，并发将无从谈起
+date: 2022-10-02 18:50:29
 
 #### InnoDB存储引擎的锁的算法有那些？
 
@@ -1614,7 +1613,7 @@ null值会占用更多的字节，且会在程序中造成很多与预期不符�
     降低性能， 不支持事务
 - **方案二**
   使用AbstractRoutingDataSource + aop + annotation在dao层决定数据源。
-  如果采用了mybatis， 可以将读写分离放在ORM层，比如mybatis可以通过mybatis plugin拦截sql语句，所有的insert/update/delete都访问master库，所有的select 都访问salve库，这样对于dao层都是透明。 plugin实现时可以通过注解或者分析语句是读写方法来选定主从库。不过这样依然有一个问题， 也就是不支持事务， 所以我们还需要重写一下DataSourceTransactionManager， 将read-only的事务扔进读库， 其余的有读有写的扔进写库。
+date: 2022-10-02 18:50:29
 - **方案三**
   使用AbstractRoutingDataSource + aop + annotation在service层决定数据源，可以支持事务.
 

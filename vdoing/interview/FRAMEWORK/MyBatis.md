@@ -1,7 +1,6 @@
 ---
 title: Mybatis
-date: 2021-10-16 01:26:13
-permalink: /pages/e83d15/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - 框架
@@ -43,7 +42,7 @@ Mapper接口里的方法，是不能重载的，因为是使用 全限名+方法
 
 > Dao接口即Mapper接口。接口的全限名，就是映射文件中的namespace的值；接口的方法名，就是映射文件中Mapper的Statement的id值；接口方法内的参数，就是传递给sql的参数。
 >
-> 当调用接口方法时，接口全限名+方法名拼接字符串作为key值，可唯一定位一个MapperStatement。在MyBatis中，每一个SQL标签，比如 < select >、< insert >、< update >、< delete >标签，都会被解析为一个MapperStatement对象。
+date: 2022-10-02 18:50:29
 >
 > 举例：com.mybatis3.mappers.StudentDao.findStudentById，可以唯一找到namespace为com.mybatis3.mappers.StudentDao下面 id 为 findStudentById 的 MapperStatement
 
@@ -408,7 +407,7 @@ system.out.println("generated key value = " + name.getid());
 
 接口绑定有两种实现方式:
 
-- 一种是通过注解绑定，就是在接口的方法上面加上 @Select、@Update等注解，里面包含Sql语句来绑定；
+date: 2022-10-02 18:50:29
 - 另外一种就是通过xml里面写SQL来绑定, 在这种情况下,要指定xml映射文件里面的namespace必须为接口的全路径名。当Sql语句比较简单时候,用注解绑定, 当SQL语句比较复杂时候,用xml绑定,一般用xml绑定的比较多。
 
 #### MyBatis与Hibernate有哪些不同？

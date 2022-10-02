@@ -1,7 +1,6 @@
 ---
 title: interface
-date: 2022-09-19 18:09:51
-permalink: /pages/e459a6/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - 优化

@@ -1,7 +1,6 @@
 ---
 title: springBoot
-date: 2021-10-15 13:42:48
-permalink: /pages/f0e7cd/
+date: 2022-10-02 18:50:29
 categories:
   - interview
 tags:
@@ -411,7 +410,7 @@ public Page<User> find(Integer page, Integer size) {
     if (CheckUtils.isEmpty(size)) {
         size = 10;
     }
-    PageRequest pageable = PageRequest.of(page, size, Sort.Direction.DESC, "updateTime");
+date: 2022-10-02 18:50:29
     Page<User> users = userRepository.findAll(pageable);
     return users;
 }

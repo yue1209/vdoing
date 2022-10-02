@@ -1,7 +1,6 @@
 ---
 title: JUC编程
-date: 2021-10-22 15:34:13
-permalink: /pages/183645/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - JUC编程
@@ -1332,9 +1331,9 @@ protected final int getState() {
 protected final void setState(int newState) { 
         state = newState;
 }
-//原子地（CAS操作）将同步状态值设置为给定值update如果当前同步状态的值等于expect（期望值）
-protected final boolean compareAndSetState(int expect, int update) {
-        return unsafe.compareAndSwapInt(this, stateOffset, expect, update);
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
 }
 123456789101112
 ```
@@ -1538,9 +1537,9 @@ java.util.concurrent 这个包里面提供了一组原子类。其基本的特�
   - AtomicLongArray
   - AtomicReferenceArray
 - 原子属性更新器：
-  - AtomicLongFieldUpdater
-  - AtomicIntegerFieldUpdater
-  - AtomicReferenceFieldUpdater
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
+date: 2022-10-02 18:50:29
 - 解决 ABA 问题的原子类：
   - AtomicMarkableReference
     通过引入一个 boolean来反映中间有没有变过
@@ -1554,7 +1553,7 @@ Atomic包中的类基本的特性就是在多线程环境下，当有多个线�
 AtomicInteger 类的部分源码：
 
 ```java
-// setup to use Unsafe.compareAndSwapInt for updates（更新操作时提供“比较并替换”的作用）
+date: 2022-10-02 18:50:29
 private static final Unsafe unsafe = Unsafe.getUnsafe();
 private static final long valueOffset;
 static {

@@ -1,7 +1,6 @@
 ---
 title: 数据库
-date: 2021-10-22 11:20:15
-permalink: /pages/73a984/
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - 优化

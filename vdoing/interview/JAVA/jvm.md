@@ -1,7 +1,6 @@
 ---
-title: JVM
-date: 2021-11-03 12:01:26
-permalink: /pages/f6903e/
+title: JVM基础
+date: 2022-10-02 18:50:29
 categories:
   - interview
   - Java
