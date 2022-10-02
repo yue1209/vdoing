@@ -4,7 +4,8 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/",
 
-  dest: "./dist",
+  // dest: "./dist",
+  dest: "./docs",
 
   locales: {
     "/": {
